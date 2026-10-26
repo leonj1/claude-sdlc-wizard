@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   review:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     # Review on open (non-draft) / ready_for_review / needs-review label
     # Skip draft PRs on open - they'll be reviewed when marked ready
     #

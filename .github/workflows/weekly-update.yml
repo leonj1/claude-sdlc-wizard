@@ -23,7 +23,7 @@ permissions:
 
 jobs:
   check-updates:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
 
     outputs:
       needs_update: ${{ steps.detect.outputs.needs_update }}
